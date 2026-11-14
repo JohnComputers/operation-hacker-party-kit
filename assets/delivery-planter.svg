@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-labelledby="title desc">
+  <title id="title">Delivery B - porch planter</title>
+  <desc id="desc">A large leafy porch planter with a W381 parcel sign and the corner of an envelope behind it.</desc>
+  <defs>
+    <linearGradient id="wall" x1="0" x2="1"><stop stop-color="#e3e9e2"/><stop offset="1" stop-color="#c6d7d0"/></linearGradient>
+    <linearGradient id="pot" x1="0" x2="1"><stop stop-color="#a4513e"/><stop offset=".5" stop-color="#cc7356"/><stop offset="1" stop-color="#7e3e34"/></linearGradient>
+    <filter id="grain"><feTurbulence baseFrequency=".75" numOctaves="3" stitchTiles="stitch" type="fractalNoise"/><feColorMatrix values="0 0 0 0 .08 0 0 0 0 .12 0 0 0 0 .14 0 0 0 .07 0"/><feBlend in="SourceGraphic" mode="multiply"/></filter>
+  </defs>
+  <rect width="800" height="520" fill="url(#wall)"/>
+  <g opacity=".22" stroke="#507069" stroke-width="3"><path d="M0 90h800M0 180h800M0 270h800"/></g>
+  <rect y="371" width="800" height="149" fill="#bfa67f"/>
+  <ellipse cx="400" cy="439" rx="196" ry="30" fill="#192e38" opacity=".18"/>
+  <g fill="#3e7a64" stroke="#245947" stroke-width="4">
+    <ellipse cx="400" cy="188" rx="42" ry="137" transform="rotate(-2 400 188)"/>
+    <ellipse cx="326" cy="198" rx="40" ry="125" transform="rotate(-28 326 198)"/>
+    <ellipse cx="476" cy="193" rx="40" ry="126" transform="rotate(29 476 193)"/>
+    <ellipse cx="269" cy="250" rx="34" ry="105" transform="rotate(-55 269 250)"/>
+    <ellipse cx="532" cy="247" rx="34" ry="106" transform="rotate(54 532 247)"/>
+  </g>
+  <path d="M269 287h262l-33 157H302z" fill="url(#pot)" stroke="#703a31" stroke-width="6"/>
+  <path d="M253 279h294v42H253z" fill="#d47a5a" stroke="#703a31" stroke-width="6"/>
+  <g transform="rotate(4 584 334)">
+    <rect x="529" y="290" width="127" height="88" rx="4" fill="#f7f3e9" stroke="#192e38" stroke-width="5"/>
+    <text x="592" y="344" fill="#192e38" font-family="monospace" font-size="31" font-weight="700" text-anchor="middle">W381</text>
+  </g>
+  <g transform="translate(494 374) rotate(-7)">
+    <path d="M0 0h116v75H0z" fill="#efe2ba" stroke="#9b784a" stroke-width="4"/>
+    <path d="m2 3 56 38 56-38" fill="none" stroke="#9b784a" stroke-width="4"/>
+  </g>
+  <rect x="23" y="23" width="136" height="39" rx="19" fill="#102b34" opacity=".9"/>
+  <text x="91" y="49" fill="#fff" font-family="monospace" font-size="18" font-weight="700" text-anchor="middle">DELIVERY B</text>
+  <rect width="800" height="520" fill="transparent" filter="url(#grain)"/>
+</svg>

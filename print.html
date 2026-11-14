@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#102b34">
+    <meta name="description" content="Printer-ready evidence for the free Ghost Parcel party mission.">
+    <title>Print Room - Ghost Parcel</title>
+    <link rel="stylesheet" href="print.css">
+    <script src="print.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link no-print" href="#print-kit">Skip to printable pages</a>
+
+    <aside class="print-toolbar no-print" aria-labelledby="print-room-title">
+      <a class="back-link" href="./"><span aria-hidden="true">&larr;</span> Mission home</a>
+      <p class="toolbar-eyebrow">Host print room</p>
+      <h1 id="print-room-title">Evidence, ready to cut.</h1>
+      <p class="toolbar-intro">Personalize the receipts, choose your active teams, then print at 100% scale.</p>
+
+      <form class="print-controls" data-print-controls>
+        <label for="print-recipient">
+          <span>Recipient / celebration</span>
+          <input id="print-recipient" name="celebrationName" type="text" maxlength="40" placeholder="The celebration" autocomplete="off">
+        </label>
+        <label for="print-team-count">
+          <span>Active teams</span>
+          <select id="print-team-count" name="teamCount">
+            <option value="3">Hawk + Wolf + Bolt</option>
+            <option value="2">Hawk + Wolf</option>
+          </select>
+        </label>
+        <button class="print-button" type="button" data-print-button>Print 2-page kit</button>
+      </form>
+
+      <div class="page-count" aria-live="polite">
+        <strong data-page-count>2 US Letter pages / 3 teams</strong>
+        <span>Page 1: receipts &middot; Page 2: envelope inserts + photo IDs</span>
+      </div>
+
+      <details open>
+        <summary>Print and prep</summary>
+        <ol>
+          <li>Choose <strong>Letter</strong>, portrait, and <strong>100% / Actual size</strong>.</li>
+          <li>Print single-sided. Turn on background graphics if your browser offers it.</li>
+          <li>Cut each receipt on the dashed edge; fold its driver panel behind the face.</li>
+          <li>Cut each dispatch note and its five strips. Shuffle one team pack per envelope.</li>
+          <li>Use the parcel ID cards only while taking evidence photos, then remove them.</li>
+        </ol>
+      </details>
+      <p class="privacy-note">Saved only in this browser under the same local setup as the mission site.</p>
+    </aside>
+
+    <main id="print-kit" class="print-kit">
+      <section class="sheet receipt-sheet" aria-labelledby="receipts-title">
+        <header class="sheet-header">
+          <div class="sheet-brand" aria-label="Ghost Parcel Service">
+            <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+            <span><strong>Ghost Parcel Service</strong><small>Evidence division</small></span>
+          </div>
+          <div>
+            <p class="sheet-kicker">Cut + fold sheet</p>
+            <h2 id="receipts-title">Shipping receipts</h2>
+          </div>
+          <p class="sheet-instruction">Cut the dashed outer edges. Fold each driver panel behind the receipt so its digits begin hidden.</p>
+        </header>
+
+        <div class="receipt-list">
+          <article class="receipt receipt-hawk" data-team="hawk" aria-label="Team Hawk shipping receipt">
+            <div class="receipt-face">
+              <div class="receipt-topline"><strong>Ghost Parcel Service</strong><span>Customer receipt / 01</span></div>
+              <div class="receipt-teamline"><span>Priority recovery</span><strong>Team Hawk</strong></div>
+              <dl class="receipt-fields">
+                <div><dt>Recipient</dt><dd data-recipient>The celebration</dd></div>
+                <div><dt>Shipment</dt><dd>Birthday goods</dd></div>
+                <div><dt>Tracking</dt><dd class="code">GP1201</dd></div>
+                <div><dt>Parcel ID</dt><dd class="code">H714</dd></div>
+                <div><dt>Delivered</dt><dd>Signed by Ghost</dd></div>
+              </dl>
+              <p class="receipt-fineprint">Fictional mission record &middot; Keep with Team Hawk</p>
+            </div>
+            <div class="fold-label" aria-hidden="true">Fold back</div>
+            <div class="driver-panel">
+              <div class="driver-heading"><strong>Driver copy</strong><span>Hawk</span></div>
+              <div class="barcode" aria-hidden="true"></div>
+              <p class="barcode-number">GP 1201 714</p>
+              <div class="digit-route" aria-label="Digits eight two six four, read toward the left arrow">
+                <span>8</span><span>2</span><span>6</span><span>4</span><b aria-hidden="true">&larr;</b>
+              </div>
+              <p class="driver-hint">Unfold only when the driver portal asks.</p>
+            </div>
+          </article>
+
+          <article class="receipt receipt-wolf" data-team="wolf" aria-label="Team Wolf shipping receipt">
+            <div class="receipt-face">
+              <div class="receipt-topline"><strong>Ghost Parcel Service</strong><span>Customer receipt / 02</span></div>
+              <div class="receipt-teamline"><span>Priority recovery</span><strong>Team Wolf</strong></div>
+              <dl class="receipt-fields">
+                <div><dt>Recipient</dt><dd data-recipient>The celebration</dd></div>
+                <div><dt>Shipment</dt><dd>Birthday goods</dd></div>
+                <div><dt>Tracking</dt><dd class="code">GP1202</dd></div>
+                <div><dt>Parcel ID</dt><dd class="code">W381</dd></div>
+                <div><dt>Delivered</dt><dd>Signed by Ghost</dd></div>
+              </dl>
+              <p class="receipt-fineprint">Fictional mission record &middot; Keep with Team Wolf</p>
+            </div>
+            <div class="fold-label" aria-hidden="true">Fold back</div>
+            <div class="driver-panel">
+              <div class="driver-heading"><strong>Driver copy</strong><span>Wolf</span></div>
+              <div class="barcode" aria-hidden="true"></div>
+              <p class="barcode-number">GP 1202 381</p>
+              <div class="digit-route" aria-label="Digits three nine one seven, read toward the left arrow">
+                <span>3</span><span>9</span><span>1</span><span>7</span><b aria-hidden="true">&larr;</b>
+              </div>
+              <p class="driver-hint">Unfold only when the driver portal asks.</p>
+            </div>
+          </article>
+
+          <article class="receipt receipt-bolt" data-team="bolt" aria-label="Team Bolt shipping receipt">
+            <div class="receipt-face">
+              <div class="receipt-topline"><strong>Ghost Parcel Service</strong><span>Customer receipt / 03</span></div>
+              <div class="receipt-teamline"><span>Priority recovery</span><strong>Team Bolt</strong></div>
+              <dl class="receipt-fields">
+                <div><dt>Recipient</dt><dd data-recipient>The celebration</dd></div>
+                <div><dt>Shipment</dt><dd>Birthday goods</dd></div>
+                <div><dt>Tracking</dt><dd class="code">GP1203</dd></div>
+                <div><dt>Parcel ID</dt><dd class="code">B526</dd></div>
+                <div><dt>Delivered</dt><dd>Signed by Ghost</dd></div>
+              </dl>
+              <p class="receipt-fineprint">Fictional mission record &middot; Keep with Team Bolt</p>
+            </div>
+            <div class="fold-label" aria-hidden="true">Fold back</div>
+            <div class="driver-panel">
+              <div class="driver-heading"><strong>Driver copy</strong><span>Bolt</span></div>
+              <div class="barcode" aria-hidden="true"></div>
+              <p class="barcode-number">GP 1203 526</p>
+              <div class="digit-route" aria-label="Digits five one eight two, read toward the left arrow">
+                <span>5</span><span>1</span><span>8</span><span>2</span><b aria-hidden="true">&larr;</b>
+              </div>
+              <p class="driver-hint">Unfold only when the driver portal asks.</p>
+            </div>
+          </article>
+        </div>
+
+        <footer class="sheet-footer"><span data-celebration-footer>The celebration</span><span>Ghost Parcel / page 1 of 2</span></footer>
+      </section>
+
+      <section class="sheet insert-sheet" aria-labelledby="inserts-title">
+        <header class="sheet-header compact-header">
+          <div class="sheet-brand" aria-label="Ghost Parcel Service">
+            <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+            <span><strong>Ghost Parcel Service</strong><small>Evidence division</small></span>
+          </div>
+          <div>
+            <p class="sheet-kicker">Cut + pack sheet</p>
+            <h2 id="inserts-title">Envelope inserts</h2>
+          </div>
+          <p class="sheet-instruction">Cut each note and five-piece label. Shuffle the five strips, then pack them with the matching note.</p>
+        </header>
+
+        <div class="pack-list">
+          <article class="team-pack pack-hawk" data-team="hawk" aria-label="Team Hawk envelope inserts">
+            <div class="dispatch-note">
+              <p class="pack-label">Pack for Team Hawk</p>
+              <h3>Dispatch note</h3>
+              <p>Ghost tore up the backup label. Fit the five pieces together so the line runs from corner to corner.</p>
+              <p><strong>Enter the word on your laptop to recover the location.</strong></p>
+              <small>Team Hawk &middot; Parcel H714</small>
+            </div>
+            <div class="strip-board">
+              <p><strong>Damaged label</strong><span>Cut between every letter</span></p>
+              <div class="strip-grid" aria-label="Five cut strips spelling NORTH">
+                <span><b>N</b></span><span><b>O</b></span><span><b>R</b></span><span><b>T</b></span><span><b>H</b></span>
+              </div>
+            </div>
+          </article>
+
+          <article class="team-pack pack-wolf" data-team="wolf" aria-label="Team Wolf envelope inserts">
+            <div class="dispatch-note">
+              <p class="pack-label">Pack for Team Wolf</p>
+              <h3>Dispatch note</h3>
+              <p>Ghost tore up the backup label. Fit the five pieces together so the line runs from corner to corner.</p>
+              <p><strong>Enter the word on your laptop to recover the location.</strong></p>
+              <small>Team Wolf &middot; Parcel W381</small>
+            </div>
+            <div class="strip-board">
+              <p><strong>Damaged label</strong><span>Cut between every letter</span></p>
+              <div class="strip-grid" aria-label="Five cut strips spelling SOUTH">
+                <span><b>S</b></span><span><b>O</b></span><span><b>U</b></span><span><b>T</b></span><span><b>H</b></span>
+              </div>
+            </div>
+          </article>
+
+          <article class="team-pack pack-bolt" data-team="bolt" aria-label="Team Bolt envelope inserts">
+            <div class="dispatch-note">
+              <p class="pack-label">Pack for Team Bolt</p>
+              <h3>Dispatch note</h3>
+              <p>Ghost tore up the backup label. Fit the five pieces together so the line runs from corner to corner.</p>
+              <p><strong>Enter the word on your laptop to recover the location.</strong></p>
+              <small>Team Bolt &middot; Parcel B526</small>
+            </div>
+            <div class="strip-board">
+              <p><strong>Damaged label</strong><span>Cut between every letter</span></p>
+              <div class="strip-grid" aria-label="Five cut strips spelling RADAR">
+                <span><b>R</b></span><span><b>A</b></span><span><b>D</b></span><span><b>A</b></span><span><b>R</b></span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <section class="photo-signs" aria-labelledby="photo-signs-title">
+          <div class="signs-heading">
+            <h3 id="photo-signs-title">Evidence photo ID signs</h3>
+            <p>Cut out, place in the matching photo, then remove.</p>
+          </div>
+          <div class="sign-grid">
+            <article class="parcel-sign sign-hawk" data-team="hawk">
+              <span>Delivery A / Chair</span><strong>H714</strong><small>Team Hawk &middot; Photo prop</small>
+            </article>
+            <article class="parcel-sign sign-wolf" data-team="wolf">
+              <span>Delivery B / Planter</span><strong>W381</strong><small>Team Wolf &middot; Photo prop</small>
+            </article>
+            <article class="parcel-sign sign-bolt" data-team="bolt">
+              <span>Delivery C / Mat</span><strong>B526</strong><small>Team Bolt &middot; Photo prop</small>
+            </article>
+          </div>
+        </section>
+
+        <footer class="sheet-footer"><span data-celebration-footer>The celebration</span><span>Ghost Parcel / page 2 of 2</span></footer>
+      </section>
+    </main>
+  </body>
+</html>

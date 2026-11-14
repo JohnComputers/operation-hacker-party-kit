@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-labelledby="title desc">
+  <title id="title">Delivery A - porch chair</title>
+  <desc id="desc">A teal porch chair with an H714 parcel sign and the corner of an envelope underneath.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#dbe8e5"/><stop offset="1" stop-color="#b9cfca"/></linearGradient>
+    <linearGradient id="floor" x1="0" x2="1"><stop stop-color="#c6a87b"/><stop offset="1" stop-color="#e0c9a4"/></linearGradient>
+    <filter id="grain"><feTurbulence baseFrequency=".8" numOctaves="3" stitchTiles="stitch" type="fractalNoise"/><feColorMatrix values="0 0 0 0 0.08 0 0 0 0 0.12 0 0 0 0 0.14 0 0 0 .08 0"/><feBlend in="SourceGraphic" mode="multiply"/></filter>
+  </defs>
+  <rect width="800" height="520" fill="url(#sky)"/>
+  <path d="M0 340h800v180H0z" fill="url(#floor)"/>
+  <g opacity=".24" stroke="#6b553c" stroke-width="4"><path d="M0 380h800M0 430h800M0 480h800"/><path d="M120 340v180M350 340v180M610 340v180"/></g>
+  <path d="M74 56h652v23H74z" fill="#f2eee4" opacity=".7"/>
+  <g fill="none" stroke="#176b70" stroke-linecap="round" stroke-linejoin="round" stroke-width="24">
+    <path d="M270 120v182M530 120v182M270 138c81-47 179-47 260 0M268 216h264M265 302h270"/>
+    <path d="m310 301-31 152M492 301l31 152M285 382h232"/>
+  </g>
+  <g transform="rotate(-4 555 330)">
+    <rect x="512" y="286" width="126" height="89" rx="4" fill="#f7f3e9" stroke="#192e38" stroke-width="5"/>
+    <text x="575" y="340" fill="#192e38" font-family="monospace" font-size="31" font-weight="700" text-anchor="middle">H714</text>
+  </g>
+  <g transform="translate(336 351) rotate(7)">
+    <path d="M0 0h119v77H0z" fill="#efe2ba" stroke="#9b784a" stroke-width="4"/>
+    <path d="m2 3 57 39 58-39" fill="none" stroke="#9b784a" stroke-width="4"/>
+  </g>
+  <rect x="23" y="23" width="136" height="39" rx="19" fill="#102b34" opacity=".9"/>
+  <text x="91" y="49" fill="#fff" font-family="monospace" font-size="18" font-weight="700" text-anchor="middle">DELIVERY A</text>
+  <rect width="800" height="520" fill="transparent" filter="url(#grain)"/>
+</svg>

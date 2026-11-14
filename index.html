@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#102b34">
+    <meta name="description" content="A free, printable, browser-based party mission for two or three teams. No accounts, ads, tracking, or paid tools.">
+    <meta property="og:title" content="Ghost Parcel - Free Party Mission">
+    <meta property="og:description" content="Print the clues, hide the evidence, and race to recover the missing delivery.">
+    <meta property="og:type" content="website">
+    <title>Ghost Parcel - Free Party Mission</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-site-header>
+      <a class="brand" href="#top" aria-label="Ghost Parcel home">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+        <span><strong>Ghost Parcel</strong><small>Operation recover</small></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-nav-toggle>
+        <span class="sr-only">Open navigation</span>
+        <span></span><span></span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+        <a href="#how-it-works">How it works</a>
+        <a href="#host-guide">Host guide</a>
+        <a href="#play">Play mission</a>
+        <a class="nav-cta" href="print.html">Print the kit</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section id="top" class="hero">
+        <div class="hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow"><span class="status-dot"></span> Free mission file / ready to deploy</p>
+            <h1>The birthday delivery has <em>vanished.</em></h1>
+            <p class="hero-lede">Turn a porch, a few envelopes, and any laptop into a fast team mystery. Agents follow a tracking trail, crack a PIN, inspect evidence, and recover the goods.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#play">Start the mission <span aria-hidden="true">-&gt;</span></a>
+              <a class="button button-secondary" href="print.html">Print the evidence</a>
+            </div>
+            <ul class="hero-facts" aria-label="Mission facts">
+              <li><strong>15-25</strong><span>minutes</span></li>
+              <li><strong>2-3</strong><span>teams</span></li>
+              <li><strong>$0</strong><span>to use</span></li>
+            </ul>
+          </div>
+
+          <div class="hero-visual reveal" aria-label="Ghost Parcel mission dossier illustration">
+            <div class="dossier dossier-back" aria-hidden="true">
+              <span>Archive 03</span>
+              <div class="barcode"></div>
+            </div>
+            <div class="dossier dossier-main">
+              <div class="dossier-topline"><span>Ghost Parcel Service</span><span>Priority</span></div>
+              <div class="parcel-seal" aria-hidden="true">
+                <svg viewBox="0 0 120 120" role="img" aria-label="Parcel icon">
+                  <path d="M24 36 60 17l36 19v48L60 103 24 84V36Z" fill="none" stroke="currentColor" stroke-width="5"/>
+                  <path d="m25 36 35 20 35-20M60 56v47M43 27l36 20" fill="none" stroke="currentColor" stroke-width="5"/>
+                </svg>
+              </div>
+              <p class="dossier-kicker">Delivery status</p>
+              <p class="dossier-alert">Location deleted</p>
+              <div class="dossier-route"><span>GP1201</span><i></i><span>???</span></div>
+              <div class="dossier-stamp">Signed by Ghost</div>
+            </div>
+            <div class="evidence-tag evidence-one" aria-hidden="true">H714</div>
+            <div class="evidence-tag evidence-two" aria-hidden="true">ACCESS?</div>
+          </div>
+        </div>
+        <div class="hero-note"><span>100% browser-based</span><span>No account</span><span>No ads</span><span>No data collection</span></div>
+      </section>
+
+      <section id="how-it-works" class="section mission-overview">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Mission overview</p>
+          <h2>One story. Six satisfying breakthroughs.</h2>
+          <p>The site runs the digital trail. The printable evidence gets agents moving, collaborating, and looking closely.</p>
+        </div>
+        <ol class="mission-steps">
+          <li class="reveal"><span>01</span><div><h3>Track the parcel</h3><p>Each team starts with a real paper receipt and enters its tracking number.</p></div></li>
+          <li class="reveal"><span>02</span><div><h3>Recover the record</h3><p>Ghost's message reveals that the delivery address has been erased.</p></div></li>
+          <li class="reveal"><span>03</span><div><h3>Crack the driver PIN</h3><p>A folded barcode and directional clue hide a four-digit portal code.</p></div></li>
+          <li class="reveal"><span>04</span><div><h3>Inspect the archive</h3><p>Teams match their parcel ID to a photographed hiding place.</p></div></li>
+          <li class="reveal"><span>05</span><div><h3>Repair the label</h3><p>Five shuffled paper strips assemble into a final recovery word.</p></div></li>
+          <li class="reveal"><span>06</span><div><h3>Find the goods</h3><p>ACCESS GRANTED reveals the prize location. First verified team wins.</p></div></li>
+        </ol>
+      </section>
+
+      <section id="play" class="section game-section">
+        <div class="section-heading section-heading-light reveal">
+          <p class="eyebrow">Agent terminal</p>
+          <h2>Run the live mission</h2>
+          <p>Enter the tracking number on your team's receipt. Progress stays in this browser only.</p>
+        </div>
+
+        <div class="game-shell reveal" data-game-shell>
+          <header class="game-toolbar">
+            <div class="secure-status"><span></span> Ghost Parcel secure terminal</div>
+            <button class="text-button" type="button" data-restart hidden>Restart mission</button>
+          </header>
+          <div class="game-body">
+            <ol class="game-progress" aria-label="Mission progress" data-game-progress>
+              <li data-step="0" class="is-active"><span>01</span><b>Track</b></li>
+              <li data-step="1"><span>02</span><b>Intercept</b></li>
+              <li data-step="2"><span>03</span><b>PIN</b></li>
+              <li data-step="3"><span>04</span><b>Archive</b></li>
+              <li data-step="4"><span>05</span><b>Restore</b></li>
+              <li data-step="5"><span>06</span><b>Granted</b></li>
+            </ol>
+            <div id="game-stage" class="game-stage" data-game-stage tabindex="-1">
+              <noscript>
+                <div class="terminal-card"><p class="terminal-label">JavaScript required</p><h3>Enable JavaScript to run the mission.</h3><p>The host guide and printable kit still work without it.</p></div>
+              </noscript>
+            </div>
+          </div>
+        </div>
+        <p class="game-footnote"><span aria-hidden="true">i</span> This version does not send results to a server. The host verifies the first team that raises its hands with ACCESS GRANTED visible.</p>
+      </section>
+
+      <section id="host-guide" class="section host-section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Host desk</p>
+          <h2>Everything you need to run it well.</h2>
+          <p>Prepare once, test each team route, and let the browser handle the sequence.</p>
+        </div>
+
+        <div class="host-grid">
+          <article class="setup-card setup-panel reveal">
+            <div class="card-number">A</div>
+            <p class="eyebrow">Local setup</p>
+            <h3>Personalize this device</h3>
+            <p>These details never leave the browser. Save the same setup on every team laptop.</p>
+            <form id="host-settings-form" class="settings-form" data-settings-form>
+              <label>
+                <span>Celebration name</span>
+                <input id="celebration-name" name="celebrationName" type="text" maxlength="40" placeholder="Alex's birthday" autocomplete="off">
+              </label>
+              <label>
+                <span>Final hiding place</span>
+                <input id="prize-location" name="prizeLocation" type="text" maxlength="90" placeholder="outside, under the table" autocomplete="off">
+              </label>
+              <label>
+                <span>Active teams</span>
+                <select id="team-count" name="teamCount">
+                  <option value="2">Hawk + Wolf (2 teams)</option>
+                  <option value="3">Hawk + Wolf + Bolt (3 teams)</option>
+                </select>
+              </label>
+              <fieldset class="photo-fields">
+                <legend>Optional evidence photos</legend>
+                <p>Built-in illustrations work immediately. To use your real hiding places, add photos on each device or export this setup.</p>
+                <label class="file-field"><span>Delivery A / chair</span><input type="file" accept="image/*" data-scene-upload="a"></label>
+                <label class="file-field"><span>Delivery B / planter</span><input type="file" accept="image/*" data-scene-upload="b"></label>
+                <label class="file-field"><span>Delivery C / mat</span><input type="file" accept="image/*" data-scene-upload="c"></label>
+              </fieldset>
+              <div class="settings-actions">
+                <button class="button button-primary" type="submit">Save setup</button>
+                <button class="button button-small" type="button" data-export-settings>Export setup</button>
+                <label class="button button-small import-button">Import setup<input type="file" accept="application/json,.json" data-import-settings></label>
+              </div>
+              <p class="form-status" role="status" data-settings-status></p>
+            </form>
+          </article>
+
+          <article class="setup-card reveal">
+            <div class="card-number">B</div>
+            <p class="eyebrow">Gather</p>
+            <h3>Mission materials</h3>
+            <ul class="check-list">
+              <li>One laptop or tablet per team</li>
+              <li>One printed receipt per team</li>
+              <li>One envelope and puzzle label per team</li>
+              <li>Scissors, tape, marker, and three ID signs</li>
+              <li>A phone for optional evidence photos</li>
+              <li>An opaque box or bag for the prizes</li>
+            </ul>
+            <a class="inline-link" href="print.html">Open printer-ready materials <span aria-hidden="true">-&gt;</span></a>
+          </article>
+
+          <article class="setup-card reveal">
+            <div class="card-number">C</div>
+            <p class="eyebrow">Team plan</p>
+            <h3>Choose two or three routes</h3>
+            <div class="team-roster">
+              <div><span class="team-icon hawk">H</span><p><strong>Hawk</strong><small>Porch chair / Delivery A</small></p></div>
+              <div><span class="team-icon wolf">W</span><p><strong>Wolf</strong><small>Planter / Delivery B</small></p></div>
+              <div><span class="team-icon bolt">B</span><p><strong>Bolt</strong><small>Door mat / Delivery C</small></p></div>
+            </div>
+            <p class="muted">For 7 players, use teams of 3 and 4. For 8 or 9, use three teams of 2 or 3.</p>
+          </article>
+        </div>
+
+        <div class="runbook reveal">
+          <div class="runbook-intro">
+            <p class="eyebrow">The 20-minute runbook</p>
+            <h3>Prep the evidence, then get out of the way.</h3>
+          </div>
+          <ol class="runbook-steps">
+            <li><span>01</span><div><h4>Print and fold</h4><p>Cut each active receipt. Fold the barcode panel behind the receipt face so the digits start hidden.</p></div></li>
+            <li><span>02</span><div><h4>Pack the envelopes</h4><p>Cut each five-letter label into strips, shuffle the pieces with its dispatch note, and mark the envelope with the team name and DAMAGED LABEL.</p></div></li>
+            <li><span>03</span><div><h4>Hide the evidence</h4><p>Place Hawk under a chair, Wolf behind a planter, and Bolt under a mat. Keep the prize table out of sight.</p></div></li>
+            <li><span>04</span><div><h4>Stage the archive</h4><p>Use the built-in images, or photograph each place with its parcel ID sign and a visible envelope corner. Remove the signs afterward.</p></div></li>
+            <li><span>05</span><div><h4>Test and reset</h4><p>Run every active route through ACCESS GRANTED, restart each device, and place the matching folded receipt face down.</p></div></li>
+          </ol>
+        </div>
+
+        <div class="briefing-grid">
+          <article class="briefing-card reveal">
+            <p class="eyebrow">Read aloud</p>
+            <blockquote data-briefing-copy>“Agents, Ghost signed for the celebration delivery and erased the address. Each team has a shipping receipt and a laptop. Search the porch only when your screen gives you a location. Bring back only your team's envelope. Keep your answers quiet. When your screen says ACCESS GRANTED, raise your hands, leave it on screen, and wait for me. Turn over your receipts. Your mission starts now.”</blockquote>
+            <button class="copy-button" type="button" data-copy-briefing>Copy briefing</button>
+          </article>
+
+          <article class="briefing-card reveal">
+            <p class="eyebrow">Assign roles</p>
+            <h3>Give every agent a job.</h3>
+            <dl class="role-list">
+              <div><dt>Operator</dt><dd>Controls the laptop</dd></div>
+              <div><dt>Reader</dt><dd>Examines the receipt</dd></div>
+              <div><dt>Finder</dt><dd>Retrieves the envelope</dd></div>
+              <div><dt>Analyst</dt><dd>Studies the archive photos</dd></div>
+            </dl>
+            <p class="muted">Pairs can share roles. Switch operators when the envelope returns for the final puzzle.</p>
+          </article>
+        </div>
+
+        <div class="host-details reveal">
+          <details>
+            <summary><span>Host answer key</span><small>Open only when you are running the mission</small></summary>
+            <div class="answer-table-wrap">
+              <table>
+                <thead><tr><th>Team</th><th>Tracking</th><th>Parcel</th><th>Receipt digits</th><th>PIN</th><th>Word</th></tr></thead>
+                <tbody>
+                  <tr><th>Hawk</th><td>GP1201</td><td>H714</td><td>8264</td><td>4628</td><td>NORTH</td></tr>
+                  <tr><th>Wolf</th><td>GP1202</td><td>W381</td><td>3917</td><td>7193</td><td>SOUTH</td></tr>
+                  <tr><th>Bolt</th><td>GP1203</td><td>B526</td><td>5182</td><td>2815</td><td>RADAR</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </details>
+          <details>
+            <summary><span>One hint for each sticking point</span><small>Keep the race moving without giving answers away</small></summary>
+            <ul class="hint-list">
+              <li><strong>Start:</strong> Which number says tracking?</li>
+              <li><strong>Portal:</strong> What would a driver click after forgetting a PIN?</li>
+              <li><strong>Digits:</strong> Touch the arrow. Which digit is closest?</li>
+              <li><strong>Photo:</strong> Match every character in the parcel ID.</li>
+              <li><strong>Label:</strong> Find the outside edges and connect the diagonal line.</li>
+            </ul>
+          </details>
+          <details>
+            <summary><span>Safety and fair play</span><small>A quick adult checklist</small></summary>
+            <ul class="hint-list">
+              <li>Keep the search area small, well lit, and free of traffic or trip hazards.</li>
+              <li>Use only fictional tracking numbers and never enter real delivery information.</li>
+              <li>Tell agents to open only their labeled envelope and leave other property alone.</li>
+              <li>Ghost is fictional. This game teaches observation and teamwork, not real system access.</li>
+            </ul>
+          </details>
+        </div>
+      </section>
+
+      <section class="section print-callout">
+        <div class="print-card reveal">
+          <div>
+            <p class="eyebrow">Ready to deploy?</p>
+            <h2>Two printed pages. Zero paid tools.</h2>
+            <p>The cut sheets include all three receipts, dispatch notes, five-piece labels, and parcel ID signs. Personalization is pulled from this browser.</p>
+          </div>
+          <a class="button button-paper" href="print.html">Open the print room <span aria-hidden="true">-&gt;</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-brand"><strong>Ghost Parcel</strong><span>A free, fictional party mission.</span></div>
+      <p>Runs entirely in your browser. No sign-in, analytics, ads, or uploads.</p>
+      <div class="footer-links"><a href="#host-guide">Host guide</a><a href="print.html">Print kit</a><a href="https://github.com/JohnComputers/operation-hacker-party-kit">Source code</a></div>
+    </footer>
+
+    <dialog class="image-dialog" data-image-dialog>
+      <button type="button" aria-label="Close image" data-dialog-close>Close</button>
+      <img src="" alt="" data-dialog-image>
+      <p data-dialog-caption></p>
+    </dialog>
+  </body>
+</html>
